@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Styled Hair Salon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8e6e6; 
+      font-family: 'American Typewriter', serif;
+      background-size: cover;
+      text-align: center; /* Center-align text */
+    }
+
+    .w3-top .w3-bar {
+      background-color: #ff85a3; /* Pink navigation bar */
+    }
+
+    .w3-bar-item {
+      color: white;
+      font-size: 18px; /* Increase font size */
+    }
+
+    .w3-bar-item:hover {
+      background-color: #ff6b8b; /* Darker pink on hover */
+    }
+
+    .w3-text-white {
+      color: #f6f6f6; /* Light gray text */
+    }
+
+    h1 {
+      font-size: 4rem; /* Increase font size */
+      color: #ff85a3; /* Pink heading */
+    }
+
+    .w3-padding-32 {
+      background-color: #fff0f0; 
+    }
+
+    .w3-border-white {
+      border-color: #ff85a3; /* Pink border */
+    }
+
+    h3 {
+      color: #ff85a3; /* Pink heading */
+     
+      font-size: 2rem; /* Increase font size */
+    }
+
+    p {
+      color: #8c8c8c; /* Light gray text */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-grayscale img {
+      filter: grayscale(100%); /* Make team member images grayscale */
+    }
+
+    .w3-input {
+      border: 2px solid #ff85a3; /* Pink input border */
+      font-size: 1rem; /* Increase font size */
+    }
+
+    .w3-button {
+      background-color: #ff85a3; /* Pink button background */
+      color: white;
+      transition: background-color 0.3s; /* Add a smooth color transition on hover */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-button:hover {
+      background-color: #ff6b8b; /* Darker pink on button hover */
+    }
+
+    .w3-center {
+      color: #f2f2f2; /* Light gray text in the footer */
+    }
+
+    .w3-hover-text-green:hover {
+      color: #4CAF50; /* Green hover text for W3Schools link */
+    }
+
+    /* New styles for the layout */
+    .split-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-section {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .image-section {
+      width: 50%;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <!-- Hamburger Icon to Open Sidebar -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i><b>Home</b></a>
+        <a href="services.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Services</a>
+        <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="policies.html" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-exclamation"></i> Policies</a>
+        <a href="packages.html" class="w3-bar-item w3-button"><i class="fa-solid fa-shop"></i>Packages</a>
+      </div>
+    </div>
+  </div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xlarge"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome to</b></span> <span class="w3-hide-small w3-text-light-grey">Girly Salon</span></h1>
+  </div>
+</header>
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="split-container">
+    <!-- Text Section -->
+    <div class="text-section">
+      <div class="w3-container w3-padding-32" id="about">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me!</h3>
+        <p>My name is Logan Censabella and I am the owner of Styled Hair Salon, I am 19 years old and I love the world of cosmetology. I am from NH and I am currently in school waiting to finish and brand my passion of owning my own salon. This is something I have been very interested in since I was a child. I am so excited to see where this journey takes me!</p>
+        <p>Since my earliest memories, the field of cosmetology has held a special place in my heart. From childhood, I was captivated by the artistry of makeup, hairstyles, and beauty. This fascination, nurtured by the vibrant world of colors and textures, has grown into a deep-seated passion that continues to shape my identity.</p>
+        <p>As I journeyed through adolescence, my bedroom transformed into a creative haven where I experimented with makeup techniques and hairstyles. The joy of seeing the transformative impact on a person's confidence fueled my desire to turn this passion into a lifelong pursuit.</p>
+        <p>Now on the verge of adulthood, my commitment to cosmetology has evolved beyond a mere interest. I envision enrolling in cosmetology school to formalize my education and refine my skills under the guidance of professionals. This is not just a career choice; it's a calling that propels me toward a future where I can share my love for beauty and self-expression with the world, helping others embrace their unique aesthetic. </p>
+          
+    
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <div class="w3-row-padding w3-grayscale">
+        <img src="imgs/lo.jpg" class="w3-image" alt="Logan Censabella" style="width:100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

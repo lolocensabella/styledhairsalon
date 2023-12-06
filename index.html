@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Styled Hair Salon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- for font awesome icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+  <style>
+    /* Custom CSS for the girly hair salon theme */
+    body {
+      background-color: #f8e6e6; 
+      font-family: 'American Typewriter', serif;
+      background-size: cover;
+      text-align: center; /* Center-align text */
+      margin: 20px; /* Add margin to the body */
+    }
+
+    .w3-top .w3-bar {
+      background-color: #ff85a3; /* Pink navigation bar */
+    }
+
+    .w3-bar-item {
+      color: white;
+      font-size: 18px; /* Increase font size */
+    }
+
+    .w3-bar-item:hover {
+      background-color: #ff6b8b; /* Darker pink on hover */
+    }
+
+    .w3-text-white {
+      color: #f6f6f6; /* Light gray text */
+    }
+
+    h1 {
+      font-size: 4rem; /* Increase font size */
+      color: #ff85a3; /* Pink heading */
+    }
+
+    .w3-padding-32 {
+      background-color: #fff0f0; 
+      padding: 20px; /* Increase padding */
+    }
+
+    .w3-border-white {
+      border-color: #ff85a3; /* Pink border */
+    }
+
+    h3 {
+      color: #ff85a3; /* Pink heading */
+      
+      font-size: 2rem; /* Increase font size */
+      margin-bottom: 10px; /* Add margin to the bottom */
+    }
+
+    p {
+      color: #8c8c8c; /* Light gray text */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-grayscale img {
+      filter: grayscale(100%); /* Make team member images grayscale */
+    }
+
+    .w3-input {
+      border: 2px solid #ff85a3; /* Pink input border */
+      font-size: 1rem; /* Increase font size */
+    }
+
+    .w3-button {
+      background-color: #ff85a3; /* Pink button background */
+      color: white;
+      transition: background-color 0.3s; /* Add a smooth color transition on hover */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-button:hover {
+      background-color: #ff6b8b; /* Darker pink on button hover */
+    }
+
+    .w3-center {
+      color: #f2f2f2; /* Light gray text in the footer */
+    }
+
+    .w3-hover-text-green:hover {
+      color: #4CAF50; /* Green hover text for W3Schools link */
+    }
+
+    /* New CSS for side-by-side images */
+    .w3-twoimages {
+      display: flex;
+      justify-content: center; /* Center the images horizontally */
+      margin-top: 20px; /* Add margin to the top */
+    }
+
+    .w3-twoimages img {
+      width: 48%; /* Adjust the width as needed */
+      margin: 10px; /* Add margin around the images */
+    }
+
+    /* Sidebar Styles */
+    .w3-sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #ff85a3;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .w3-sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .w3-sidebar a:hover {
+      color: #ff6b8b;
+    }
+
+    .w3-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .w3-sidebar {padding-top: 15px;}
+      .w3-sidebar a {font-size: 16px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <!-- Hamburger Icon to Open Sidebar -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"> <i class="fa-solid fa-house"></i> <b>Home</b></a>
+      <a href="services.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Services</a>
+      <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="policies.html" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-exclamation"></i> Policies</a>
+      <a href="packages.html" class="w3-bar-item w3-button"><i class="fa-solid fa-shop"></i>Packages</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large w3-padding-16" onclick="closeNav()">&times;</a>
+  <a href="services.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Services</a>
+  <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i> About Us</a>
+  <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> Contact</a>
+  <a href="policies.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Policies</a>
+  <a href="products.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Packages</a>
+</nav>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+  </div>
+
+  <!-- About Us Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-white w3-padding-16">Styled Hair Salon</h3>
+    <p>Welcome to Styled Hair Salon, where we invite you to experience the epitome of beauty and style. Our highly skilled and passionate team is dedicated to making you look and feel your best. With a rich history spanning a year, we have been providing top-notch hair and beauty services in a comfortable and relaxing environment. Your satisfaction is our priority, and we are committed to exceeding your expectations!</p>
+  </div>
+  
+  <!-- Images Section -->
+  <div class="w3-twoimages">
+    <img src="imgs/pink.jpg" alt= pink class="w3-image">
+    <img src="imgs/mirror.jpg" alt= mirror class="w3-image"> <!-- Add the path to your second image -->
+    <img src="imgs/pink.jpg" alt= pink class="w3-image">
+  </div>
+
+  <!-- Welcome Section -->
+  <div class="w3-container w3-padding-32" id="welcome">
+    <h3 class="w3-border-bottom w3-border-white w3-padding-16"></h3>
+    <p>Step into a world of elegance and sophistication at Styled Hair Salon. From the moment you walk through our doors, you'll be greeted with a warm and friendly atmosphere. Our salon is designed to be a haven of relaxation, where you can unwind and indulge in a pampering experience.</p>
+    <p>At Styled Hair Salon, we believe in the power of transformation. Whether you're looking for a trendy haircut, a vibrant color change, or a rejuvenating treatment, our talented stylists are here to bring your vision to life. We pride ourselves on staying updated with the latest trends and techniques to provide you with the best possible service.</p>
+    <p>Indulge in our luxurious salon experience and let our team of experts enhance your natural beauty. We look forward to making each visit a delightful and memorable one. Thank you for choosing Styled Hair Salon, where every strand is a work of art!</p>
+    <p>Discover a range of premium services tailored to your unique style and preferences. From precision haircuts to stunning color transformations, our skilled stylists are dedicated to creating the perfect look for you. Explore our services and indulge in a world of beauty and elegance.</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="w3-container w3-padding-32" id="services">
+    
+    <!-- Add more details about specific services or service categories -->
+  </div>
+
+
+
+</html>
+

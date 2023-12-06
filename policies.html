@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Styled Hair Salon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8e6e6; 
+      font-family: 'American Typewriter', serif;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .w3-top .w3-bar {
+      background-color: #ff85a3; /* Pink navigation bar */
+    }
+
+    .w3-bar-item {
+      color: white;
+      font-size: 18px; /* Increase font size */
+    }
+
+    .w3-bar-item:hover {
+      background-color: #ff6b8b; /* Darker pink on hover */
+    }
+
+    h1 {
+      font-size: 4rem; /* Increase font size */
+      color: #ff85a3; /* Pink heading */
+    }
+
+    .w3-padding-32 {
+      background-color: #fff0f0; 
+    }
+
+    .w3-border-white {
+      border-color: #ff85a3; /* Pink border */
+    }
+
+    h3 {
+      color: #ff85a3; /* Pink heading */
+   
+      font-size: 2rem; /* Increase font size */
+    }
+
+    p {
+      color: #8c8c8c; /* Light gray text */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-grayscale img {
+      filter: grayscale(100%); /* Make team member images grayscale */
+    }
+
+    .w3-input {
+      border: 2px solid #ff85a3; /* Pink input border */
+      font-size: 1rem; /* Increase font size */
+    }
+
+    .w3-button {
+      background-color: #ff85a3; /* Pink button background */
+      color: white;
+      transition: background-color 0.3s; /* Add a smooth color transition on hover */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-button:hover {
+      background-color: #ff6b8b; /* Darker pink on button hover */
+    }
+
+    .w3-center {
+      color: #f2f2f2; /* Light gray text in the footer */
+    }
+
+    .w3-hover-text-green:hover {
+      color: #4CAF50; /* Green hover text for W3Schools link */
+    }
+
+    /* Split container CSS */
+    .split-container {
+      display: flex;
+    }
+
+    .split-left,
+    .split-right {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .split-right {
+      background-color: #fff; /* White background on the right */
+    }
+
+    /* Sidebar Styles */
+    .w3-sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #ff85a3;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .w3-sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .w3-sidebar a:hover {
+      color: #ff6b8b;
+    }
+
+    .w3-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .w3-sidebar {padding-top: 15px;}
+      .w3-sidebar a {font-size: 16px;}
+    }
+  </style>
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <!-- Hamburger Icon to Open Sidebar -->
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+       
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i><b>Home</b></a>
+            <a href="services.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Services</a>
+            <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="policies.html" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-exclamation"></i> Policies</a>
+            <a href="packages.html" class="w3-bar-item w3-button"><i class="fa-solid fa-shop"></i> Packages</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Sidebar -->
+<div class="w3-sidebar" id="mySidebar">
+  <a href="javascript:void(0)" class="w3-button w3-white w3-xlarge w3-padding-large w3-right" onclick="closeNav()">×</a>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="aboutme.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+  <a href="policies.html" class="w3-bar-item w3-button"> Policies</a>
+  <a href="packages.html" class="w3-bar-item w3-button"> Packages</a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <div class="w3-display-middle w3-margin-top w3-center">
+ 
+  </div>
+</header>
+<div class="text-section">
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Our Policy</h3>
+      <p>Late Arrivals
+
+        Please call if you think you will arrive late for your reserved appointment time. However, it is possible we may ask you to reschedule your visit if it interferes with another clients appointment time. 
+        
+        Styled Hair Salon CANCELLATION POLICY
+        
+        Your appointments are very important to the Luxe team members. We understand that sometimes schedule adjustments are necessary; therefore, we respectfully request at least a 24- hour notice for cancellations.  Our appointments are confirmed via text or email 48 hours in advance because we know it easy to forget an appointment booked months prior.  </p>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <img src="imgs/city.jpg" alt=hair class="banner" style="width:100%">
+  </div>
+
+    <div class="w3-container w3-padding-32" id="second">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"></h3>
+      <p> Please understand that when an appointment is cancelled without enough notice, we miss the opportunity to fill that appointment time, and clients on our wait list miss the opportunity to receive services. If you do need to cancel your appointment, please contact the salon via email or call 603-488-1297.  Guests who cancel their appointments without providing proper notice will be charged 50% of their scheduled appointment. Guests who do not show up for their appointments will be charged 100%.  
+        
+        Thank you for viewing and supporting our policies! </p>
+       </div>
+
+
+
+<!-- Your remaining HTML content -->
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
+
+</html>
+
+

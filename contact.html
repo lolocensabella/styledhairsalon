@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Styled Hai Salon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8e6e6; 
+      font-family: 'American Typewriter', serif;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .w3-top .w3-bar {
+      background-color: #ff85a3; /* Pink navigation bar */
+    }
+
+    .w3-bar-item {
+      color: white;
+      font-size: 18px; /* Increase font size */
+    }
+
+    .w3-bar-item:hover {
+      background-color: #ff6b8b; /* Darker pink on hover */
+    }
+
+    h1 {
+      font-size: 4rem; /* Increase font size */
+      color: #ff85a3; /* Pink heading */
+    }
+
+    .w3-padding-32 {
+      background-color: #fff0f0; 
+      padding: 20px; /* Increase padding */
+    }
+
+    h3 {
+      color: #ff85a3; /* Pink heading */
+
+      font-size: 2rem; /* Increase font size */
+      margin-bottom: 10px; /* Add margin to the bottom */
+    }
+
+    p {
+      color: #8c8c8c; /* Light gray text */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-grayscale img {
+      filter: grayscale(100%); /* Make team member images grayscale */
+    }
+
+    .w3-input {
+      border: 2px solid #ff85a3; /* Pink input border */
+      font-size: 1rem; /* Increase font size */
+    }
+
+    .w3-button {
+      background-color: #ff85a3; /* Pink button background */
+      color: white;
+      transition: background-color 0.3s; /* Add a smooth color transition on hover */
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .w3-button:hover {
+      background-color: #ff6b8b; /* Darker pink on button hover */
+    }
+
+    .w3-center {
+      color: #f2f2f2; /* Light gray text in the footer */
+    }
+
+    .w3-twoimages {
+      display: flex;
+      justify-content: center; /* Center the images horizontally */
+      margin-top: 20px; /* Add margin to the top */
+    }
+
+    .w3-twoimages img {
+      width: 48%; /* Adjust the width as needed */
+      margin: 10px; /* Add margin around the images */
+    }
+
+    .w3-sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #ff85a3;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .w3-sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .w3-sidebar a:hover {
+      color: #ff6b8b;
+    }
+
+    .w3-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .w3-sidebar {padding-top: 15px;}
+      .w3-sidebar a {font-size: 16px;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <!-- Hamburger Icon to Open Sidebar -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+     
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i><b>Home</b></a>
+        <a href="services.html" class="w3-bar-item w3-button"><i class="fas fa-cut"></i> Services</a>
+        <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="policies.html" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-exclamation"></i> Policies</a>
+        <a href="packages.html" class="w3-bar-item w3-button"><i class="fa-solid fa-shop"></i>Packages</a>
+      </div>
+    </div>
+  </div>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  
+
+  <!-- Contact Us Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Us</h3>
+
+    <!-- Social Media Icons -->
+    <a href="https://www.facebook.com/logan.censabella.1/" class="w3-bar-item w3-button"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/logannncensss?s=21" class="w3-bar-item w3-button"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/logancensabella/" class="w3-bar-item w3-button"><i class="fab fa-instagram"></i></a>
+
+    <p>Let's get in touch and schedule your next appointment.</p>
+    <p>We're thrilled to connect with you at our hair salon! Whether you have questions about our services, want to schedule an appointment, or simply seek advice on the latest trends, we're here for you. </p>
+    <p>Follow us on social media for updates on styles, promotions, and more. We look forward to bringing out the best in your hair and ensuring you leave our salon feeling confident</p>
+    <img src="imgs/gold.jpg" alt=gold class="w3-image" style="width:50%">
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Your Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Your Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Your Message" required name="Message">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+</div>
+<div class="w3-container w3-padding-32" id="about">
+  <h3 class="w3-border-bottom w3-border-white w3-padding-16">Location Information!</h3>
+  <p>We are located in Bedford NH, off of 114 near the Hannafords. We are so excited to meet you and give you the most magical experience because you deserve it!</p>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
+</body>
+
+</html>
